@@ -1,4 +1,4 @@
-![Screenshot 2023-03-15 223401](https://github.com/Rawan-AbdElmoneim/Rawan-AbdElmoneim/assets/142115846/b4319c00-5a56-441d-868b-9318fe9aa7fc)# Introduction
+# Introduction
 This article details a comprehensive project aimed at developing an Optical Character Recognition (OCR) system for converting Arabic handwritten text to digital text. The OCR system leverages a meticulously compiled dataset, the Arabic Handwritten Alphabets and Words Dataset (AHAWP), which includes a diverse collection of handwritten Arabic alphabets and words. The project's goal is to enhance the accuracy and reliability of handwriting recognition for the Arabic language, facilitating applications in various domains such as document digitization, automated data entry, and historical document preservation. This document outlines the dataset creation, preprocessing steps, and methodologies employed to develop a robust OCR system.
 
 
@@ -8,7 +8,9 @@ The dataset covers a wide range of Arabic alphabets, including variations such a
 
 ## Arabic Words:
 The dataset contains a diverse set of Arabic words, carefully selected to represent all Arabic alphabets comprehensively. The words are chosen to include different letter combinations and contextual usages, providing a robust training ground for the OCR system.
-![Uploading 1081_001.jpg…]()
+
+![1081_001](https://github.com/Rawan-AbdElmoneim/Rawan-AbdElmoneim/assets/142115846/289961b7-25a6-4a86-8c5e-812885398cdf)
+
 
 
 ## Khatt Dataset:
