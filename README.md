@@ -64,9 +64,11 @@ LSTMs, or Long Short-Term Memory networks, are a type of recurrent neural networ
 Convolutional Layers:
 Conv2D Layer 1: 32 filters, kernel size (3, 3), activation 'relu'
 Conv2D Layer 2: 64 filters, kernel size (3, 3), activation 'relu'
+
 MaxPooling Layers:
 MaxPooling Layer 1: Pool size (2, 2)
 MaxPooling Layer 2: Pool size (2, 2)
+
 Flatten Layer: Flattens the feature maps into a single vector.
 Dense Layer: Fully connected layer with 128 units, activation 'relu'.
 Reshape Layer: Reshapes the vector to (1, 128) to add the time dimension for LSTM.
