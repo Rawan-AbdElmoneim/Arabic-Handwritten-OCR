@@ -61,19 +61,23 @@ LSTMs, or Long Short-Term Memory networks, are a type of recurrent neural networ
 
 
 ## Improved CNN-RNN Model with Bidirectional LSTM:
-Convolutional Layers:
-Conv2D Layer 1: 32 filters, kernel size (3, 3), activation 'relu'
-Conv2D Layer 2: 64 filters, kernel size (3, 3), activation 'relu'
+- **Convolutional Layers:**
+  - **Conv2D Layer 1:** 32 filters, kernel size (3, 3), activation 'relu'
+  - **Conv2D Layer 2:** 64 filters, kernel size (3, 3), activation 'relu'
 
-MaxPooling Layers:
-MaxPooling Layer 1: Pool size (2, 2)
-MaxPooling Layer 2: Pool size (2, 2)
+- **MaxPooling Layers:**
+  - **MaxPooling Layer 1:** Pool size (2, 2)
+  - **MaxPooling Layer 2:** Pool size (2, 2)
 
-Flatten Layer: Flattens the feature maps into a single vector.
-Dense Layer: Fully connected layer with 128 units, activation 'relu'.
-Reshape Layer: Reshapes the vector to (1, 128) to add the time dimension for LSTM.
-Bidirectional LSTM: 128 units, return_sequences=True, captures the sequential nature of the text from both directions.
-Output Layer: Dense layer with softmax activation to classify the characters, with the number of units equal to the number of classes in the dataset (num_classes).
+- **Flatten Layer:** Flattens the feature maps into a single vector.
+
+- **Dense Layer:** Fully connected layer with 128 units, activation 'relu'.
+
+- **Reshape Layer:** Reshapes the vector to (1, 128) to add the time dimension for LSTM.
+
+- **Bidirectional LSTM:** 128 units, return_sequences=True, captures the sequential nature of the text from both directions.
+
+- **Output Layer:** Dense layer with softmax activation to classify the characters, with the number of units equal to the number of classes in the dataset (num_classes).
 
 ![Screenshot 2024-05-22 124148](https://github.com/Rawan-AbdElmoneim/Rawan-AbdElmoneim/assets/142115846/4da356c2-7c3c-4940-8194-083e849eaeef)
 
