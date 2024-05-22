@@ -84,3 +84,25 @@ LSTMs, or Long Short-Term Memory networks, are a type of recurrent neural networ
 This structure enables the model to effectively extract and interpret both spatial and sequential features from the input images, leading to accurate recognition of Arabic handwritten text.
 
 
+- **Training Accuracy:** 96%
+- **Test Accuracy:** 70%
+
+  ![Screenshot 2024-05-22 104859](https://github.com/Rawan-AbdElmoneim/Rawan-AbdElmoneim/assets/142115846/e149fd0a-29c5-41c3-9045-be8f8b187c61)
+  ![Screenshot 2024-05-22 104923](https://github.com/Rawan-AbdElmoneim/Rawan-AbdElmoneim/assets/142115846/f6f7bca3-cc98-4eda-a8aa-c0e7cbd2378c)
+
+
+While the current model achieved satisfactory accuracy levels, further improvements could be explored by incorporating transformer architectures. However, it's important to note that implementing transformers typically demands substantial GPU resources, which were not utilized in this project.
+
+
+**Prediction and Evaluation**
+
+- **Gaussian Blur and Edge Detection:** Applied to enhance the contrast between text and background.
+- **Thresholding and Contour Detection:** Used to locate the handwritten word.
+- **Image Cropping and Resizing:** The image is cropped to the bounding box of the text and resized to match the model input size (32x32 pixels).
+- **Model Prediction:** The preprocessed image is fed into the trained model to predict the label, which is then decoded and displayed.
+
+![Screenshot 2024-05-22 112240](https://github.com/Rawan-AbdElmoneim/Rawan-AbdElmoneim/assets/142115846/9d1679df-6f28-40c9-85e7-12be6b4617db)
+
+
+
+
