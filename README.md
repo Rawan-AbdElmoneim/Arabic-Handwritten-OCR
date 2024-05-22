@@ -17,11 +17,14 @@ The dataset contains a diverse set of Arabic words, carefully selected to repres
 In addition to the AHAWP dataset, the project also incorporates the Khatt dataset. The Khatt dataset is a well-known resource for Arabic handwriting recognition, comprising thousands of handwritten samples collected from various writers. This dataset adds further diversity and volume to the training data, enhancing the OCR system's ability to generalize across different handwriting styles and variations.
 
 # Preprocessing
-Grayscale Conversion:
+## Grayscale Conversion:
 The input images, originally in RGB format, are first converted to grayscale. This reduces the computational complexity and focuses the model on the text's structural features rather than color information.
 
 ## Noise Removal:
 To improve the quality of the input images, noise removal techniques are applied. This step helps in eliminating unwanted artifacts and background noise, ensuring that the handwritten text is more clearly defined for the OCR system.
+
+## Cropping:
+The images are cropped to isolate just the written word, removing unnecessary background. This step ensures that the focus remains on the text itself, which is crucial for accurate recognition.
 
 ## Image Resizing:
 The images are resized to a consistent dimension, typically 128x128 pixels. This standardization facilitates uniform input to the neural network, aiding in efficient processing and learning.
@@ -31,3 +34,13 @@ Normalization is performed to scale the pixel values to a range between 0 and 1.
 
 ## Data Augmentation
 To enhance the robustness and generalization capabilities of the OCR system, data augmentation techniques are employed. These include various transformations such as rotation, scaling, and translation applied to the images, simulating different handwriting styles and conditions. This helps in creating a more diverse training set, enabling the model to perform better on unseen data.
+
+## randomly selected data after noise removal and grayscale conversion
+![Screenshot 2024-05-22 121233](https://github.com/Rawan-AbdElmoneim/Rawan-AbdElmoneim/assets/142115846/155ae39a-b59b-4950-95b7-290ca58d6d4e)
+
+## randomly selected data after all the preprocessing process
+![Screenshot 2024-05-22 121316](https://github.com/Rawan-AbdElmoneim/Rawan-AbdElmoneim/assets/142115846/bd9c44c3-4d7a-4b82-836e-a6517c881477)
+
+
+
+
